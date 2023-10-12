@@ -31,4 +31,3 @@ return str ;
 let op=printForeCast([17,21,23])
 console.log(op+"...")
 
-//1st we have to destructure the array
