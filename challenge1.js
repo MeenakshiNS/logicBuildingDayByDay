@@ -31,6 +31,4 @@ return str ;
 let op=printForeCast([17,21,23])
 console.log(op+"...")
 
-console.log('hello meenakshi');
 
-console.log('vineesh')

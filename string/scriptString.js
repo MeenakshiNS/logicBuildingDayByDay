@@ -13,41 +13,38 @@ console.log("meenakshi".length);
 console.log(airline.indexOf("A"));
 console.log(airline.lastIndexOf("A"));
 console.log(airline.indexOf("Portugal"));
+console.log(airline.indexOf("portugal")); //-1
+
 console.log("meenu".indexOf("e"));
-// console.log(plane[0]);
-// console.log(plane[1]);
-// console.log(plane[2]);
-// console.log('B737'[0]);
 
-// console.log(airline.length);
-// console.log('B737'.length);
 
-// console.log(airline.indexOf('r'));
-// console.log(airline.lastIndexOf('r'));
-// console.log(airline.indexOf('portugal'));
+console.log(airline.slice(4));
+console.log(airline.slice(4,8));
 
-// console.log(airline.slice(4));
-// console.log(airline.slice(4, 7));
+console.log(airline.slice(0,airline.indexOf(' ')));
+console.log(airline.slice(0,airline.lastIndexOf(' ')));
+console.log(airline.slice(airline.lastIndexOf(' ')+1)); //here +1 is used to remove the space in the front 
 
-// console.log(airline.slice(0, airline.indexOf(' ')));
-// console.log(airline.slice(airline.lastIndexOf(' ') + 1));
+console.log(airline.slice(-2));
+console.log(airline.slice(1,-1));//1st poisiton il tudangum and last position edukilla
 
-// console.log(airline.slice(-2));
-// console.log(airline.slice(1, -1));
+//write a function that  receives an aeroplane seat and log where its a middle seat or not
 
-// const checkMiddleSeat = function (seat) {
-//   // B and E are middle seats
-//   const s = seat.slice(-1);
-//   if (s === 'B' || s === 'E') console.log('You got the middle seat 😬');
-//   else console.log('You got lucky 😎');
-// };
+function checkMiddleSeat(seat){
+    //B  AND E are middle seats
+    const s=seat.slice(-1);
+    if(s==='B' || s==='E'){
+        console.log('middle seat');
+    }else{
+        console.log('not middleseat');
+    }
+}
 
-// checkMiddleSeat('11B');
-// checkMiddleSeat('23C');
-// checkMiddleSeat('3E');
+checkMiddleSeat('11B')
+checkMiddleSeat('23C')
+checkMiddleSeat('3E')
 
-// console.log(new String('jonas'));
-// console.log(typeof new String('jonas'));
 
-// console.log(typeof new String('jonas').slice(1));
+
+
 
